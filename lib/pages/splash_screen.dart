@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-// import 'package:coffee_shop/widgets/common_button.dart';
-// import 'package:coffee_shop/pages/app_main_screen.dart';
+import 'package:coffee_shop/widgets/common_button.dart';
+import 'package:coffee_shop/pages/app_main_screen.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -52,18 +52,18 @@ class SplashScreen extends StatelessWidget {
                         height: 1.3,
                       ),
                     ),
-                    // const SizedBox(height: 30),
-                    // CommonButton(
-                    //   title: "Get Started",
-                    //   onTab: () {
-                    //     Navigator.push(
-                    //       context,
-                    //       MaterialPageRoute(
-                    //         builder: (_) => const CoffeeAppMainScreen(),
-                    //       ),
-                    //     );
-                    //   },
-                    // )
+                    const SizedBox(height: 30),
+                    CommonButton(
+                      title: "Get Started",
+                      onTab: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => const CoffeeAppMainScreen(),
+                          ),
+                        );
+                      },
+                    )
                   ],
                 ),
               ),
